@@ -126,7 +126,7 @@ namespace MemoryGame_project
                 return input;
             else
             {
-                Console.WriteLine("the number is out of the range pleas select number betwen 0 and " +(size-1));
+                Console.WriteLine("the number is out of the range please select number betwen 0 and " +(size-1));
                 input=inputcheck(size);
             }
             return input;
@@ -162,49 +162,6 @@ namespace MemoryGame_project
             }//randomize the matrix 
 
             return a;
-
-
-
-            /*
-            Random rand = new Random();
-            Random rand1 = new Random();
-            int row, column;bool flag = false;
-            int[,] arr = new int[size, size];
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = 0; j < size; j++)
-                {
-                    arr[i, j] = 0;
-                }
-            }//to fill thr matrix with zero's
-            int MatesNo = (size * size) / 2;
-            for (int i = 1; i <= MatesNo; i++)
-            {
-                flag = true;
-                while (flag)
-                {
-                    row = rand.Next(0, size);
-                    column = rand.Next(0, size);
-                    if (arr[row, column] == 0)
-                    {
-                        arr[row, column] = i;
-                        flag = false;
-                    }
-                }//fill the first card into the mmatrix 
-                flag = true;
-                while (flag)
-                {
-                    row = rand.Next(0, size);
-                    column = rand.Next(0, size);
-                    if (arr[row, column] ==0 )
-                    {
-                        arr[row, column] = i;
-                        flag = false;
-                    }
-                }//fill the second card into the matrix /
-            }//this loop run to each cell in the matrix and fill it witha random index 
-            return arr;
-        }//fill the matrix with a rondom index in the range */
         }
         static int  MatrixSizeReciver ()
         {
